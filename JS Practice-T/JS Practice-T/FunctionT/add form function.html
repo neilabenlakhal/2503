@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+First NUMBER: <input type="text" id="myText1" value=""> <br>
+Second NUMBER: <input type="text" id="myText2" value=""><br>
+
+<p>Click the button to display the value of the value attribute of the text field.</p>
+
+<button onclick="myFunction()">Try it</button>
+
+<p id="demo"> RESULT HERE </p>
+
+<script>
+function myFunction() {
+    var x = document.getElementById("myText1").value; 
+    var y = document.getElementById("myText2").value;
+     
+     var x1=parseFloat(x); 
+     var y1=parseFloat(y);
+
+    document.getElementById("demo").innerHTML = x1+y1;
+}
+</script>
+
+</body>
+</html>
+
+
+    

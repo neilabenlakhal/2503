@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title> JS code : where to put it ?</title>
+    	<script type="text/javascript">
+		// function declared in the head
+		 function SayhiHead() 
+		 { 				                  	
+          window.alert("Hi, I am declared in the head."); 
+		 } 	
+	 </script>
+
+    <script src="lib.js">
+      //function declared in a library 
+    </script>
+  </head>
+  <body>
+    <script>
+        //immediate execution
+        SayhiHead();
+    </script>
+    <h1>Upon event detection : onclick</h1>
+    <form>
+      <input type="button" value="Say Hi from a library"  onclick="SayHiLibrary();" />
+      <input type="button" value="Say Hi from the head"  onclick="SayhiHead();" />
+
+    </form>
+  </body>
+</html>

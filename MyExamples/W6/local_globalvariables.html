@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title> local global var</title>
+    </head>
+  <body>
+<script type="text/javascript">
+		// function declared in the head
+var a = 12;  //variable  is global
+var b = 4; 
+function Multiplyby2(b) { 
+var a = b * 2;  //variable is local
+var c= 10;    
+return a;
+} 
+document.write("The double of ",b," is stored in a local variable ",Multiplyby2(b), "<br/>");
+          
+document.write("The global variable a value is still : ",a); 
+document.write("The global variable c value is still : ",c); 
+//will show a value is 12
+</script></body></html>

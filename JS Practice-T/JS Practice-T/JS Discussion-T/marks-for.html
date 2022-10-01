@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>Click the button to enter marks and get the average</p>
+
+<button onclick="myFunction()"> CLICK ME PLEASE </button>
+
+<p id="demo"></p>
+
+<script>
+    function myFunction() {
+    var mark=0;
+    var sum=0;
+    var average=0;
+    var grade="";
+     var max= window.prompt("ENTER TIME NUMBER OF MARKS");
+
+   for (i = 0; i < max; i++) 
+     { 
+        var mark= window.prompt("ENTER MARK "+i);
+         var mark1=parseFloat(mark);
+        sum= sum+mark1;
+     }
+
+
+    average=sum/max;
+    if (average< 60) {
+        grade= "YOU FAIL";
+    } else if (average>= 60  &&  grade <=80) {
+        grade= "YOU ARE GOOD";
+    } else {
+        grade = "YOU ARE EXCELLENT";
+    }
+document.getElementById("demo").innerHTML = grade+"  " + sum +" " +average;
+}
+</script>
+
+</body>
+</html>

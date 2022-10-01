@@ -1,0 +1,61 @@
+<!--
+ Write a program to get day (1 to 7) display the day in words. 1 - Sunday...
+7 -Saturday
+-->
+<html>
+ <head>
+     <script>
+         day = window.prompt("Enter day 1 to 7 ")
+         day = parseInt(day)
+        /* 
+         if(day == 1)
+             weekday = "Sunday"
+         else if(day == 2)
+             weekday = "Monday"
+         else if(day == 3)
+             weekday = "Tuesday"
+         else if(day == 4)
+             weekday = "Wednesday"
+         else if(day == 5)
+             weekday = "Thursday"
+         else if(day == 6)
+             weekday = "Friday"
+         else if(day == 7)
+             weekday = "Saturday"
+         else
+             weekday = "invalid day" */
+             
+         switch(day)
+         {
+                 case 1:
+                 { weekday = "Sunday";
+                 break;}
+                 case 2:
+                 { weekday = "Monday";
+                 break;}
+                 case 3:
+                 { weekday = "Tuesday";
+                 break;}
+                 case 4:
+                  { weekday = "Wednesday";
+                  break;}
+                 case 5:
+                   { weekday = "Thursday";
+                   break;} 
+                 case 6:
+                    { weekday = "Friday";
+                    break;}
+                 case 7:
+                     { weekday = "Saturday";
+                     break;}
+                 default:
+                      { weekday = "Indvalid day"}
+         }
+      
+        document.write("Days is " + weekday)
+
+     </script>
+  </head>
+  <body>
+  </body>  
+</html>

@@ -1,0 +1,36 @@
+
+<!DOCTYPE html>
+
+
+   <head>
+      <title>Shifted and Scaled Random Integers</title>
+
+      <script type = "text/javascript">
+         <!--
+         var value;
+
+         document.writeln( 
+            "<table border = \"1\" width = \"50%\">" );
+         document.writeln( 
+            "<caption>Random Numbers</caption><tr>" );
+      
+         for ( var i = 1; i <= 20; i++ ) {
+            value = Math.floor( 1 + Math.random() * 6 );
+            document.writeln( "<td>" + value + "</td>" );
+
+            // write end and start <tr> tags when
+            // i is a multiple of 5 and not 20
+            if ( i % 5 == 0 && i != 20 )
+               document.writeln( "</tr><tr>" );
+         }
+
+         document.writeln( "</tr></table>" );
+         // -->
+      </script>
+
+   </head>
+   <body>
+      <p>Click Refresh (or Reload) to run the script again</p>
+   </body>
+</html>
+

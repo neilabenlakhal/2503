@@ -1,0 +1,37 @@
+<!--
+  A person has to be more than 17 years old and have valid license to 
+drive car. Write a program to read the age and valid license holder, display 
+if the person can drive the car or not
+-->
+<html>
+ <head>
+     <script>
+         age = window.prompt("Enter your age ")
+         lic = window.prompt("Do you have a valid license (y/n) ")
+         lic = lic.toUpperCase()
+         if(age > 17)
+         {
+             if(lic == "Y")
+             {
+                 document.write("You are eligible to drive a car ");
+             }
+             else
+             {
+                 document.write("You need to get a valid license to drive a car ");
+             }
+         }
+         else
+         {
+             document.write("You need to be 18 years and above to drive a car ");
+         }
+         
+         v1 = window.prompt("Enter value1 ")
+         v2 = window.prompt("Enter value2 ")
+         max = (v1 > v2) ? v1 : v2;
+         document.write("<br>Max of " + v1 + " and " + v2 + " is " + max)
+         
+     </script>
+  </head>
+  <body>
+  </body>  
+</html>
