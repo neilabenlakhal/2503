@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+  
+  
+  regusername = /^[a-zA-Z]{10,}$/;
+
+function validateForm() {
+  let name = document.forms["myForm"]["name"].value;
+  if ((regusername.test(name) == false)) {
+    alert("Name must contain at least 10 caracters");
+    return false;
+  }
+  else 
+    {
+        alert ("regular expression verified, you can proceed ..");      
+  return true;
+  }
+}
+</script>
+</head>
+<body>
+
+<h2>JavaScript Validation</h2>
+
+<form name="myForm" action="/action_page.php" onsubmit="return validateForm()" method="post">
+  Name: <input type="text" name="name">
+  <input type="submit" value="Submit">
+</form>
+</body>
+</html>

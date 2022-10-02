@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script>
+
+        //declare regular expression
+        regutelephone = /^(02|04|06)[0-9]{6}$/;
+
+        function validateForm() {
+            let telephone = document.getElementById("telephone").value;
+            if ((regutelephone.test(telephone) == false)) {
+                alert("Only UAE Landline numbers are accepted.");
+                return false;
+            }
+            else {
+                alert("regular expression verified, you can proceed ..");
+                return true;
+            }
+        }
+    </script>
+</head>
+<body>
+    <h2>JavaScript Validation</h2>
+    <form name="myForm" action="/action_page.php" 
+    onsubmit="return validateForm()" 
+    method="post">
+        Telephone: <input type="text" id="telephone"/>
+        <input type="submit" value="Submit"/>
+    </form>
+</body>
+
+</html>
