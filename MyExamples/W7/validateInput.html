@@ -1,6 +1,12 @@
 <script>
     function validateForm() {
-      let x = document.forms["myForm"]["fname"].value;
+ // var x = document.forms["myForm1"]["fname1"].value;
+//var y = document.forms["myForm1"]["pwd"].value;
+//var w = document.forms[0][0].value;
+//var z= document.getElementsByName("fname")[0].value
+      
+
+var x = document.getElementById("fname").value;
       if (x == "") {
         alert("Name must be filled out");
         return false;
@@ -13,10 +19,11 @@
     <h2>JavaScript Validation</h2>
     
     <form name="myForm" action="/action_page.php" onsubmit="return validateForm()" method="post">
-      Name: <input type="text" name="fname">
+      Name: <input type="text" name="fname" id="fname">
       <input type="submit" value="Submit">
     </form>
     
+    </form>
     </body>
     </html>
     
