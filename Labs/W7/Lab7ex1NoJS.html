@@ -6,7 +6,7 @@ The data in the form will be validated on form submit. The user will not be
 forwarded to the next stage until the given values are correct. 
  -->
 <head>
-<script>
+<!-- <script>
 function validate(){
 var num=document.myform.num.value;
 if (isNaN(num)){ //predefined function
@@ -16,11 +16,11 @@ if (isNaN(num)){ //predefined function
   return true;
   }
 }
-</script>
+</script> -->
 </head>
 <body>
-<form name="myform" action="/action_page.php" onsubmit="return validate()" >
-Number: <input type="text" name="num"/>
+<form name="myform" action="/action_page.php" onsubmit="return validate()" />
+Number: <input type="number" name="num"/>
 <span id="numloc"></span><br/>
 <input type="submit" value="submit"/>
 </form>

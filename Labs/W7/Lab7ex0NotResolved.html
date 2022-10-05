@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
 <!-- In this example, we are going to validate the name and password.
 The name can’t be empty and the password can’t be less than 6 characters long. 
@@ -9,14 +10,12 @@ forwarded to the next stage until the given values are correct.
     <script>
         function validateform() {
             var name = document.myform.name.value;
-            // var document.getElementById("name").value;
-            
             var password = document.myform.password.value;
-            if (name == null || name == "") { //null : predefined value type Null
+            if (name == null || name == "") {
                 alert("Name can't be blank");
                 return false;
             }
-            else if (password.length < 6) { // length is predefined 
+            else if (password.length < 6) {
                 alert("Password must be at least 6 characters long.");
                 return false;
             }
@@ -24,10 +23,12 @@ forwarded to the next stage until the given values are correct.
     </script>
 
     <body>
+        <br />
+        <br />
         <form name="myform" method="post" action="" onsubmit="return validateform()" />
-        Name: <input type="text" name="name" id="name"  placeholder="Name here.."/><br />
-        Password: <input type="password" name="password" id="password"/><br />
-        <input type="submit" value="register"/>
+        Name: <input type="text" name="name"/><br/>
+        Password: <input type="password" name="password"/><br />
+        <input type="submit" value="Register"/>
         </form>
     </body>
 

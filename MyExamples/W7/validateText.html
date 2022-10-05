@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 <script>
-  
-  
-  regusername = /^[a-zA-Z]{10}$/;
+  //define regular expression 
+
+  regusername = /^[a-zA-Z]{10,20}$/;
 
 function validateForm() {
   let name = document.forms["myForm"]["name"].value;
@@ -21,13 +22,10 @@ function validateForm() {
 </script>
 </head>
 <body>
-
 <h2>JavaScript Validation</h2>
-
 <form name="myForm" action="/action_page.php" onsubmit="return validateForm()" method="post">
-  Name: <input type="text" name="name">
-  <input type="submit" value="Submit">
-
+  Name: <input type="text" name="name"/>
+  <input type="submit" value="Submit"/>
 </form>
 </body>
 </html>
