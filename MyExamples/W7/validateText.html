@@ -5,12 +5,15 @@
 <script>
   //define regular expression 
 
-  regusername = /^[a-zA-Z]{10,20}$/;
+  regusername = /[a-zA-Z]{7,25}/;
+  //regusername = /[a-zA-Z]{7,25}/;
+ // x = /web/i;
 
 function validateForm() {
-  let name = document.forms["myForm"]["name"].value;
+  let name = document.getElementById("name").value;
+
   if ((regusername.test(name) == false)) {
-    alert("Name must contain exactely 10 caracters");
+    alert("Name must contain between 7 and 25");
     return false;
   }
   else 
@@ -24,7 +27,7 @@ function validateForm() {
 <body>
 <h2>JavaScript Validation</h2>
 <form name="myForm" action="/action_page.php" onsubmit="return validateForm()" method="post">
-  Name: <input type="text" name="name"/>
+  Name: <input type="text" name="name" id="name"/>
   <input type="submit" value="Submit"/>
 </form>
 </body>
