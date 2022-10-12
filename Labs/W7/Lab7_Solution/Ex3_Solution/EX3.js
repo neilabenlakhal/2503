@@ -25,9 +25,12 @@ function Validate() {
 	var lunch = document.getElementById("lunch"); //radio button
 	var dinner = document.getElementById("dinner"); //radio button
 	var result = true; 
-	if (/^[a-zA-Z ]{10,}$/.test(fullname) == false) {
+
+	regname=/^[a-zA-Z ]{10,}$/;
+	if (regname.test(fullname) == false) {
 		document.getElementById("fnameError").innerHTML = "Must be at least 10 letters, spaces allowed";
 		result = false;
+		
 	}
 	if (/^(05|06|07)[0-9]{6}$/.test(phone) == false) {
 		document.getElementById("phoneError").innerHTML = "Must start with 05 or 06 or 07 followed by 6 more digits";

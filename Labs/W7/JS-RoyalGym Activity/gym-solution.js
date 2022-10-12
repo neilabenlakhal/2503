@@ -48,7 +48,7 @@ function validate() {
 
     if (remobile.test(mobile.value) == false) {
         mobileError.innerHTML =
-"Must start with 05 or 06 or 07 followed by 6 more digits";
+            "Must start with 05 or 06 or 07 followed by 6 more digits";
         error = true;
     }
     else
@@ -104,7 +104,7 @@ function finalAmount() {
         var pType = document.getElementById("pType").value;
         var year = document.getElementById("year").value;
 
-        var price = 0, tPrice = 0, ageDis = 0, stdDis = 0, femaleDis = 0; 
+        var price = 0, tPrice = 0, ageDis = 0, stdDis = 0, femaleDis = 0;
         var fPrice = 0;
 
         if (pType == "PACKAGE A")
@@ -125,11 +125,11 @@ function finalAmount() {
         if (female.checked)
             femaleDis = (5 / 100) * tPrice;
 
-     
-         //Add student verification
+
+        //Add student verification
 
         if (student.checked)
-        stdDis = (10/ 100) * tPrice;
+            stdDis = (10 / 100) * tPrice;
 
         fPrice = tPrice - ageDis - femaleDis - stdDis;
 
