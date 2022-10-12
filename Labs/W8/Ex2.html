@@ -12,17 +12,21 @@
     <script>
 
         $(document).ready(function () {
-            $(".btn1").click(function () { //will hide paragraphs in the document 
-                $("p").hide();
+            $(".btn1").click(function () { //will hide/show paragraphs in the document 
+                $("p").toggle();
             });
         });
 
         $(document).ready(function () {
-            $(".btn2").click(function () { //will hide h2 in the document 
-                $("h2").hide();
+            $(".btn2").click(function () { //will hide/show h2 in the document 
+                $("h2").toggle();
             });
         });
-
+        $(document).ready(function () {
+            $(".btn3").click(function () { //will hide h2 in the document 
+                $("#test").toggle();
+            });
+        });
     </script>
 </head>
 
@@ -32,9 +36,10 @@
     <p>This is a paragraph</p>
     <p>This is another paragraph</p>
     <p>I hope you enjoy programming with jQuery</p>
-
-    <button class="btn1">hide paragraph</button>
-    <button class="btn2">hide heading </button>
+    <p id="test">jQuery is a powerful addition to JavaScript making our web pages more extensible</p>
+    <button class="btn1">hide/show paragraph</button>
+    <button class="btn2">hide/show heading </button>
+    <button class="btn3">hide/show paragraph with Id </button>
 
 </body>
 
