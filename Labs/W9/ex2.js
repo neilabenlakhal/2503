@@ -24,6 +24,6 @@ $(document).ready(function(){
     alert("Paragraph Text: " + $("#test").text());
   }); 
   $(".btn5").click(function(){
-    alert("course code: " + $("#code").val()+"course name: "+ $("#name").val());
+    alert("course code: " + $("#code").val()+" course name: "+ $("#name").val());
   }); 
 });

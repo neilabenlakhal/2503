@@ -1,3 +1,5 @@
+
+
 window.onload = function() {
     $(function(){ alert("jQuery + DOM loaded."); });
 }
@@ -26,10 +28,8 @@ $(document).ready(function(){
 // before returning its text on an alert.  See code below: 
 
 
-
-
-
+/* 
   $(".btn4").click(function(){
     alert("Paragraph Text: " + $("#test").text());
-  }); 
+  });  */
 });
