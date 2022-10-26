@@ -1,5 +1,3 @@
-
-
 window.onload = function () {
     $(function () { alert("jQuery + DOM loaded."); });
 }
@@ -14,8 +12,8 @@ $(document).ready(function () {
     $(".btn3").click(function () {
         $("#test").toggle();
     });
-    $("#code").focus(function () {
-        $("#code").css("background-color", "red");
+    $("input").focus(function () {
+        $(this).css("background-color", "lightblue");
     });
     $("input").blur(function () {
         $(this).css("background-color", "lightgreen");
@@ -26,10 +24,8 @@ $(document).ready(function () {
     $(".btn5").click(function () {
         alert("course code : " + $("#code").val() + "course name: " + $("#name").val());
 
-        //$("#p1").text("hi");
         $("#p1").text("Course Code entered: " + $("#code").val());
         $("#p2").text("Course Name entered: " + $("#name").val());
-        
 
     });
 });

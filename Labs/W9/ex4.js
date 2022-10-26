@@ -28,7 +28,9 @@ $(document).ready(function () {
 
         $("#p1").text("Course Code entered: " + $("#code").val());
         $("#p2").text("Course Name entered: " + $("#name").val());
-        $("#heading").append(" - "+ $("#student").val());  
+        //$("#heading").append(" - "+ $("#student").val());
+        //$("#heading").text(" - "+ $("#student").val());   
+        $("#heading").remove(); 
 
     });
 });

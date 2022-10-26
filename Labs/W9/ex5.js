@@ -23,6 +23,10 @@ $(document).ready(function () {
     $(".btn4").click(function () {
         alert("Paragraph Text: " + $("#test").text());
     });
+    $(".btn6").click(function () {
+        $("#heading").addClass("blue");
+        
+    });
     $(".btn5").click(function () {
         alert("course code : " + $("#code").val() + "course name: " + $("#name").val());
 
