@@ -1,4 +1,4 @@
-var calculator = require('./calc');
+var calculator = require('./calc');  // ./ means that calc.js is in the same folder as index.js
 	
 var x = 50, y = 10;
 	
