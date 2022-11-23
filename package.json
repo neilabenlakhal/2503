@@ -1,5 +1,6 @@
 {
   "dependencies": {
-    "bootstrap": "^5.2.2"
+    "bootstrap": "^5.2.2",
+    "express-generator": "^4.16.1"
   }
 }
