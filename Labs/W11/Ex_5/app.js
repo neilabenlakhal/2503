@@ -1,3 +1,11 @@
+/* 
+To run this code install express:
+run npm install express@4.17.1
+run node app.js
+
+to access projects. html : the route is localhost:5000/projects.html */
+
+
 const express = require('express');  //import the module 
 const path = require('path'); // use the pre-installed path module
 const app = express(); // invoke the express module
