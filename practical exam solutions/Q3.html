@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<title>Question 3</title>
+<head>
+    <script>
+        var pi=Math.PI; //predefined constant equal to 3.14
+       
+        function calculateArea(rad) {
+            var result = rad * rad * Math.PI;
+            return result;
+        }
+    </script>
+</head>
+<body>
+    <p>Calculating the area of a circle.</p>
+    <script>
+        var radius = window.prompt("Enter the Radius of your circle:");
+        var rad = parseFloat(radius);
+        document.write ("The area of the circle is :")
+        document.write(calculateArea(rad));
+    </script>
+</body>
+</html>

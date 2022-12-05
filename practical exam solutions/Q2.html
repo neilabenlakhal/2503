@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<title>Question 2</title>
+
+<head>
+    <script>
+        var StartProgram = function () {
+            var response = window.prompt("Were you absent in the exam? Answer with Yes/No");
+
+
+            if (response == "Yes") {
+                document.getElementById("para").innerHTML = "Kindly apply for exam Makeup.";
+            }
+            else {
+                document.getElementById("para").innerHTML = "Great, you do not need a makeup, wait for your grade !";
+            }
+        }
+    </script>
+</head>
+
+<body onload="StartProgram();">
+    <h2 style="color:maroon;font-family:Geneva;">My Dear Student,</h2>
+    <p id="para" style="color:blue; font-family:Geneva;">This content will be replaced...</p>
+
+</body>
+</html>

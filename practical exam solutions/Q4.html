@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<title>Question4.</title>
+<body>
+    <h1 id="title" style=background-color:pink;">Pink background title will turn Yellow</h1>
+    <h2 id="heading" style="font-family:Geneva;"> title with Geneva font will be in Arial.</h2>
+    <p id="para" style="color:blue;">Blue paragraph will turn red.</p>
+
+    <br />
+
+    <button type="button" onclick="change()">Set the new styles dynamically</button>
+
+    <script>
+        function change() {
+            document.getElementById("title").style.backgroundColor = "yellow";
+            document.getElementById("heading").style.fontFamily = "Arial";
+            document.getElementById("para").style.color = "red";
+        }
+    </script>
+
+</body>
+
+</html>

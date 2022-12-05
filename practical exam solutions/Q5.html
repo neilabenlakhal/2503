@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Question5.</title>
+    <script>
+
+        regusername = /^[a-zA-Z ]{8,25}$/;
+
+        function validateForm() {
+            let name = document.getElementById("name").value;
+
+            if ((regusername.test(name) == false)) {
+                alert("Name must contain between 8 and 25 characters");
+                return false;
+            }
+            else {
+                alert("regular expression verified, you can proceed ..");
+                return true;
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <h2>JavaScript Validation</h2>
+    <form name="myForm" action="/action_page.php" onsubmit="return validateForm()" method="post">
+        Name: <input type="text" name="name" id="name" />
+        <input type="submit" value="Submit" />
+    </form>
+</body>
+
+</html>
